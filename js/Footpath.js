@@ -37,8 +37,10 @@ class Footpath {
     }
   
     moveToNextScreen() {
-      
-  
+      clear();
+
+      this.footholds.splice(0, this.footholds.length - 2);
+
       this.screenCounter += 1;
     }
   }

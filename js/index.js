@@ -10,10 +10,10 @@ function preload() {
 function setup() {
   createCanvas(800, windowHeight);
   footpath = new Footpath();
-  background("#99BF69");
 }
 
 function draw() {
+  background("#99BF69");
   footpath.drawFootholds();
 
   if (mouseIsPressed) {
