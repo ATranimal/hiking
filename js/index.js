@@ -14,12 +14,13 @@ function preload() {
 function setup() {
   createCanvas(800, windowHeight);
   footpath = new Footpath(imgs_footholds);
-  early = new Player();
+  early = new Player(imgs_earl_idle);
 }
 
 function draw() {
   background("#99BF69");
   footpath.drawFootholds();
+  early.draw();
 
   if (mouseIsPressed) {
     footpath.moveToNextScreen();
